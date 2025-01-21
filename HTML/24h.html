@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 300px;
+        }
+        .inline {
+            display: inline-block;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" maxlength="50" placeholder="Max 50 Characters Allowed">
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" maxlength="10" placeholder="10 Digits Only">
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" class="inline">
+        <label for="male" class="inline">Male</label>
+        <input type="radio" id="female" name="gender" value="female" class="inline">
+        <label for="female" class="inline">Female</label>
+
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4"></textarea>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" maxlength="50" placeholder="Max 50 Characters Allowed">
+
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" name="pincode" maxlength="6" placeholder="Max 6 Numbers Allowed">
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" maxlength="50" placeholder="Max 50 Characters Allowed">
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" value="India" readonly>
+
+        <label>Hobbies:</label>
+        <input type="checkbox" id="drawing" name="hobbies" value="Drawing">
+        <label for="drawing" class="inline">Drawing</label>
+        <input type="checkbox" id="singing" name="hobbies" value="Singing">
+        <label for="singing" class="inline">Singing</label>
+        <input type="checkbox" id="dancing" name="hobbies" value="Dancing">
+        <label for="dancing" class="inline">Dancing</label>
+        <input type="checkbox" id="sketching" name="hobbies" value="Sketching">
+        <label for="sketching" class="inline">Sketching</label>
+        <input type="checkbox" id="others" name="hobbies" value="Others">
+        <label for="others" class="inline">Others</label>
+        <input type="text" placeholder="Ex: Teaching" maxlength="50">
+
+        <label>Qualification:</label>
+        <input type="checkbox" id="highSchool" name="qualification" value="High School">
+        <label for="highSchool" class="inline">High School(10th)</label>
+        <input type="checkbox" id="higherSchool" name="qualification" value="Higher School">
+        <label for="higherSchool" class="inline">Higher School(12th)</label>
+        <input type="checkbox" id="graduation" name="qualification" value="Graduation">
+        <label for="graduation" class="inline">Graduation(Bachelors)</label>
+        <input type="checkbox" id="postGraduation" name="qualification" value="Post Graduation">
+        <label for="postGraduation" class="inline">Post Graduation(Masters)</label>
+        <input type="checkbox" id="phd" name="qualification" value="PHD">
+        <label for="phd" class="inline">PHD</label>
+
+        <label>Courses Applied For:</label>
+        <input type="radio" id="bca" name="course" value="BCA">
+        <label for="bca" class="inline">BCA(Bachelor Of Computer Application)</label>
+        <input type="radio" id="bcom" name="course" value="BCom">
+        <label for="bcom" class="inline">B.Com(Bachelor Of Commerce)</label>
+        <input type="radio" id="bsc" name="course" value="BSC">
+        <label for="bsc" class="inline">BSC(Bachelor Of Science)</label>
+        <input type="radio" id="ba" name="course" value="BA">
+        <label for="ba" class="inline">BA(Bachelor Of Arts)</label>
+        <input type="radio" id="mca" name="course" value="MCA">
+        <label for="mca" class="inline">MCA(Master Of Computer Application)</label>
+        <input type="radio" id="mcom" name="course" value="MCom">
+        <label for="mcom" class="inline">M.Com(Master Of Commerce)</label>
+        <input type="radio" id="msc" name="course" value="MSC">
+        <label for="msc" class="inline">MSC(Master Of Science)</label>
+        <input type="radio" id="ma" name="course" value="MA">
+        <label for="ma" class="inline">MA(Master Of Arts)</label>
+
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

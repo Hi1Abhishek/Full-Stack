@@ -1,0 +1,18 @@
+body
+{
+    background-color: palevioletred;
+}
+h1
+{
+    color:darkblue;
+    text-align: center;
+}
+
+p
+{
+ font-family: cursive;
+ font-size:20px;
+ text-transform: uppercase;
+ color:greenyellow;
+ 
+}

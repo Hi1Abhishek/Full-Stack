@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+</head>
+<body>
+    <h1>Welcome to My Website!</h1>
+    <p>This is a simple webpage with a heading and a paragraph.</p>
+    <img src="https://via.placeholder.com/150" alt="Sample Image">
+     <!-- Unordered list -->
+<ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+</ul>
+
+<!-- Ordered list -->
+ <!---order--->
+<ol>
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+</ol>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Jane</td>
+        <td>30</td>
+    </tr>
+</table>
+<form action="/submit" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+<video width="320" height="240" controls>
+    <source src="20221024_144009.mp4" type="video/mp4">
+    <p style="color: rgb(50, 19, 19);">This div has a background image.</p>
+    Your browser does not support the video tag.
+</video>
+
+<button onclick="alert('Button clicked!')">Click Me</button>
+
+<label for="fruits">Choose a fruit:</label>
+<select id="fruits" name="fruits">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="cherry">Cherry</option>
+</select>
+
+<nav>
+    <a href="home.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="contact.html">Contact</a>
+</nav>
+
+
+
+<audio controls id="audio-player">
+    <source src="Bang_Bang_Title_Track_Full_Video___BANG_BANG___Hrithik_Roshan_Katrina_Kaif___Vishal_Shekhar_Benny_D(1080p).mp4" type="audio/mpeg">
+    Your browser does not support the audio tag.
+</audio>
+
+<script>
+    document.getElementById('audio-player').volume = 0.5; // Set volume to 50%
+</script>
+
+
+<p style="color: blue; font-size: 20px;">This is a hellstyled paragraph.</p>
+
+<form>
+    <p>Choose your favorite color:</p>
+    <input type="radio" id="red" name="color" value="red">
+    <label for="red">Red</label><br>
+
+    <input type="radio" id="blue" name="color" value="blue">
+    <label for="blue">Blue</label><br>
+
+    <input type="radio" id="green" name="color" value="green">
+    <label for="green">Green</label><br>
+</form>
+<progress value="40" max="100"></progress>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th rowspan="2">Remarks</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td colspan="2">Total Age</td>
+        <td>25</td>
+    </tr>
+</table>
+<p style="color: green; font-family: Arial; font-size: 16px;">Styled text with a specific font and color.</p>
+
+<div style="background-image: url('https://via.placeholder.com/500'); height: 200px; width: 300px;">
+    <p style="color: rgb(50, 19, 19);">This div has a background image.</p>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive HTML Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>A comprehensive example of HTML elements</p>
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>This webpage demonstrates a variety of HTML elements that you can use to create content-rich web pages.</p>
+        <img src="https://via.placeholder.com/800x200" alt="Placeholder Image" style="width: 100%; border-radius: 5px;">
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm an aspiring web developer. Here's some information about me:</p>
+        <ul>
+            <li><strong>Name:</strong> John Doe</li>
+            <li><strong>Hobbies:</strong> Coding, Reading, Traveling</li>
+            <li><strong>Skills:</strong> HTML, CSS, JavaScript</li>
+        </ul>
+    </section>
+
+    <section id="table">
+        <h2>My Favorite Books</h2>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+            </tr>
+            <tr>
+                <td>The Alchemist</td>
+                <td>Paulo Coelho</td>
+                <td>Fiction</td>
+            </tr>
+            <tr>
+                <td>1984</td>
+                <td>George Orwell</td>
+                <td>Dystopian</td>
+            </tr>
+            <tr>
+                <td>The Pragmatic Programmer</td>
+                <
+                
+             td>Andy Hunt, Dave Thomas</td>
+                <td>Programming</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
