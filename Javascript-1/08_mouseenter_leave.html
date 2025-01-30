@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>On mouse  enter and leave function</h1>
+    <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="a3.webp"
+    alt="Smiley" width="32" height="32">
+    <p>
+        the function bigimage triggers when user move the mouse pointer onto the image.</p>
+
+        <p> the function normalImg triggers when user moved out the mouse pointer</p>
+
+        <script>
+            function bigImg(x){
+                x.style.height = "400px";
+                x.style.width = "600px";
+            }
+
+            function normalImg(x){
+                x.style.height = "100px";
+                x.style.width = "100px"; 
+            }
+        </script>
+</body>
+</html>

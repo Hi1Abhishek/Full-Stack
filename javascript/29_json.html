@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="grey">
+    
+    <button onclick="fun()">Click me</button><br>
+
+    <script type="text/javascript">
+        function fun() {
+            var ObjArr=[
+                {"Name":"Spark","Class":"C"},
+                {"Name":"Sp","Class":"JS"},
+                {"Name":"Sk","Class":"MERN"}
+            ];
+
+            for(var temp of ObjArr) {
+                alert(temp.Name);
+                alert(temp.Class);
+            }
+        }
+    </script>
+</body>
+</html>

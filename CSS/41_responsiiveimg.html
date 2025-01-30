@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.gallery
+        {
+           border: 1px solid #ccc;
+        }
+
+        div.gallery:hover{
+            border: 1px solid #161515
+        }
+
+        div.gallery img{
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc{
+            padding: 15px;
+            text-align: center;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .responsive{
+            padding:0 6px;
+            float: left;
+            width: 24.9999%;
+        }
+
+        @media only screen and (max-width: 700px){
+            .responsive{
+                width: 49.999%;
+                margin: 6px 0;
+            }
+            
+        }
+
+        @media only screen and (max-width: 500px){
+            .responsive{
+                width: 100%;
+               
+            }
+        }
+
+        .clearflix:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="a3.webp">
+                <img src="a3.webp" alt="cinque terre" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="a3.webp">
+                <img src="a3.webp" alt="cinque terre" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="a3.webp">
+                <img src="a3.webp" alt="cinque terre" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="a3.webp">
+                <img src="a3.webp" alt="cinque terre" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div style="padding:6px;">
+        <p>
+            this example use media queries to re-arrage the image on different screen size: for screen larger than 700px wide,
+            it show four image side by side ,for screen </p>
+    </div>
+</body>
+</html>

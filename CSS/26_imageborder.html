@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #borderimg1
+        {
+            border: 30px solid transparent;
+            padding: 15px;
+            border-image: url(v3.jpg) 30 round;
+            text-align: center;
+            background-repeat: repeat-y;
+
+        
+        }
+        #borderimg2
+        {
+            border: 30px solid transparent;
+            padding: 15px;
+            border-image: url(v3.jpg) 30 stretch;
+            text-align: center;
+            background-repeat: repeat-y;
+        
+        }
+    </style>
+</head>
+<body>
+    <h2> border image property </h2>
+
+    <p id="borderimg1"> Element content</p>
+    <p id="borderimg2"> Element content</p>
+</body>
+</html>

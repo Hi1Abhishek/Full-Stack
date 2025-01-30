@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    #chessboard {
+      display: grid;
+      grid-template-columns: repeat(8, 60px);
+      grid-template-rows: repeat(8, 60px);
+      border: 5px solid #333;
+    }
+
+    .cell {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .white {
+      background-color: #eee;
+    }
+
+    .black {
+      background-color: #444;
+      color: white; 
+    }
+
+    .piece {
+      cursor: pointer;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="chessboard"></div>
+
+  <script>
+    const board = document.getElementById("chessboard");
+
+    const initialSetup = [
+      ["", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", ""],
+    ];
+
+    const createBoard = () => {
+      for (let row = 0; row < 8; row++) {
+        for (let col = 0; col < 8; col++) {
+          const cell = document.createElement("div");
+          const isWhite = (row + col) % 2 === 0;
+          cell.classList.add("cell", isWhite ? "white" : "black");
+          cell.dataset.row = row;
+          cell.dataset.col = col;
+
+          const piece = initialSetup[row][col];
+          if (piece) {
+            const pieceElement = document.createElement("div");
+            pieceElement.textContent = piece;
+            pieceElement.classList.add("piece");
+            cell.appendChild(pieceElement);
+          }
+
+          board.appendChild(cell);
+        }
+      }
+    };
+
+    const handlePieceClick = (e) => {
+      const piece = e.target;
+      const cell = piece.parentElement;
+
+      if (piece.classList.contains("selected")) {
+        piece.classList.remove("selected");
+      } else {
+        document.querySelectorAll(".selected").forEach((el) => el.classList.remove("selected"));
+        piece.classList.add("selected");
+      }
+    };
+
+    board.addEventListener("click", (e) => {
+      if (e.target.classList.contains("piece")) {
+        handlePieceClick(e);
+      }
+    });
+
+    createBoard();
+  </script>
+
+</body>
+</html>
+
+

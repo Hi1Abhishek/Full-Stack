@@ -1,0 +1,172 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chessboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+
+      #chessboard {
+        display: grid;
+        grid-template-columns: repeat(8, 50px);
+        grid-template-rows: repeat(8, 50px);
+        border: 2px solid black;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+      
+      .square {
+        width: 50px;
+        height: 50px;
+      }
+
+      .black {
+        background-color: black;
+      }
+
+      .white {
+        background-color: white;
+      }
+
+      /* .square:hover {
+  background-color: rgba(255, 0, 0, 0.5); /* Red highlight */
+  cursor: pointer;
+} */
+
+
+    </style>
+  </head>
+  <body>
+    <div id="chessboard"></div>
+
+    <script>
+      const chessboard = document.getElementById("chessboard");
+
+      // Create the 8x8 chessboard
+      for (let row = 0; row < 8; row++) {
+        for (let col = 0; col < 8; col++) {
+          const square = document.createElement("div");
+          square.classList.add("square");
+
+          // Alternate colors based on row and column
+          if ((row + col) % 2 === 0) {
+            square.classList.add("white");
+          } else {
+            square.classList.add("black");
+          }
+
+          chessboard.appendChild(square);
+        }
+      }
+
+//       const squares = document.querySelectorAll(".square");
+
+// squares.forEach((square, index) => {
+//   const row = Math.floor(index / 8);
+//   const col = index % 8;
+
+//   square.addEventListener("mouseover", () => {
+//     squares.forEach((s, i) => {
+//       if (Math.floor(i / 8) === row || i % 8 === col) {
+//         s.style.backgroundColor = "lightblue";
+//       }
+//     });
+//   });
+
+//   square.addEventListener("mouseout", () => {
+//     squares.forEach((s, i) => {
+//       s.style.backgroundColor = s.classList.contains("white") ? "white" : "black";
+//     });
+//   });
+// });
+
+    </script>
+  </body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Chessboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #2c3e50; /* Dark background for contrast */
+        }
+
+        #chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 60px);
+            grid-template-rows: repeat(8, 60px);
+            border: 5px solid #222;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+        }
+
+        .square {
+            width: 60px;
+            height: 60px;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+        }
+
+        .black {
+            background-color: #2d3436; /* Dark Gray */
+        }
+
+        .white {
+            background-color: #ecf0f1; /* Light Gray */
+        }
+
+        /* Hover Effect */
+        .square:hover {
+            background-color: #f39c12; /* Golden Yellow */
+            transform: scale(1.1); /* Slight zoom effect */
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+        }
+
+        /* Row & Column Highlight */
+        .highlight {
+            background-color: #e74c3c !important; /* Red highlight */
+        }
+    </style>
+</head>
+<body>
+    <div id="chessboard"></div>
+
+    <script>
+        const chessboard = document.getElementById("chessboard");
+
+        // Create the 8x8 chessboard
+        for (let row = 0; row < 8; row++) {
+            for (let col = 0; col < 8; col++) {
+                const square = document.createElement("div");
+                square.classList.add("square");
+
+                // Alternate colors based on row and column
+                if ((row + col) % 2 === 0) {
+                    square.classList.add("white");
+                } else {
+                    square.classList.add("black");
+                }
+
+                chessboard.appendChild(square);
+            }
+        }
+    </script>
+</body>
+</html>

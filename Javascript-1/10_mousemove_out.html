@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> HTML DOM Events</h1>
+    <h2> Onmousemove event</h2>
+
+    <div onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
+
+    <p> mouse over the rectangle and get the coordinates of your mouse position</p>
+
+    <p> when You move the mouse over the div ,p element will be displayed horizontally and vertically coordinates of your mouse position</p>
+<h1 id="demo"></h1>
+<script>
+    function myFunction(e){
+        let x = e.clientX;
+        let y = e.clientY;
+        let coor = "Coordinates: (" + x + " , " + x + ")";
+        document.getElementById("demo").innerHTML = coor;
+    }
+
+    function clearCoor(){
+        document.getElementById("demo").innerHTML ="";
+    }
+</script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Move Coordinates</title>
+    <style>
+        /* Styling the div for better visibility */
+        #mouseArea {
+            width: 400px;
+            height: 200px;
+            background-color: lightgray;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 200px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1> HTML DOM Events</h1>
+    <h2> Onmousemove Event</h2>
+
+    <div id="mouseArea" onmousemove="myFunction(event)" onmouseout="clearCoor()">
+        Move your mouse here
+    </div>
+
+    <p>Move the mouse over the rectangle to see the coordinates.</p>
+    <h1 id="demo"></h1>
+
+    <script>
+        function myFunction(e) {
+            let x = e.clientX;
+            let y = e.clientY;
+            let coor = "Coordinates: (" + x + " , " + y + ")";
+            document.getElementById("demo").innerHTML = coor;
+        }
+
+        function clearCoor() {
+            document.getElementById("demo").innerHTML = "";
+        }
+    </script>
+</body>
+</html>

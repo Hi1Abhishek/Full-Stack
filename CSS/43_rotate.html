@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        the rotate () method
+    </h1>
+    <p>
+        the rotate() method  rotates the an element clockwise or counterclockwise
+    </p>
+
+    <div>
+        this a normal element
+    </div>
+
+    <div id="myDiv">
+        this div element is rotated clockwise 50 degrees
+    </div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Rotate Example</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #e74c3c;
+      border-radius: 10px;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    /* Hover effect using rotate */
+    .box:hover {
+      transform: rotate(45deg); /* Rotates the box by 45 degrees */
+    }
+
+    /* Animation using rotate */
+    .box.animate {
+      animation: spin 2s infinite linear;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box animate"></div>
+</body>
+</html>

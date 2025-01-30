@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left: 300px;
+            background-image: linear-gradient( violet,aqua,yellow,red);
+        }
+
+        h1{
+            margin-left: 70px;
+            font-family: cursive;
+            color: whitesmoke;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="password"]
+
+        textarea{
+            border-radius: 5px;
+            padding: 10px;
+            border-left: 20px solid red;
+        }
+
+        #em{
+         border-left: 20px solid green;
+        }
+
+        #username{
+            border-left: 20px solid green;
+        }
+
+        input[type="date"]{
+            width: 168;
+        }
+      
+
+        input[type="submit"],
+        input[type="reset"]{
+            padding: 5px;
+            background-color: white
+            
+        }
+
+    </style>
+</head>
+<body>
+
+	<h1><I>REGISTERATION FORM </I></h1>
+
+	<form method="post" action="29_loginform.html">
+		<div>
+		<input type="text" id="fname" name="fname" placeholder="Name" required><br><br>
+		</div>
+
+		<div>
+		<input type="email" id="em" name="em" placeholder="Email"><br><br>
+		</div>
+
+		<div>
+		<textarea id="add" name="add" placeholder="Address" rows="5" cols="30"></textarea><br><br>
+		</div>
+	
+		<div>
+		<input type="tel" id="tel" name="tel" placeholder="Phone"><br><br>
+		</div>
+
+		<div>
+		<input type="date" id="date" name="date" placeholder="DOB"><br><br>
+		</div>
+
+		<div>
+		<input type="text" id="username" name="username" placeholder="username"><br><br>
+		</div>
+
+		<div>
+		<input type="password" id="pass" name="pass" placeholder="Password"><br><br>
+		</div>
+
+		<div>
+		<input type="password" id="cpass" name="cpass" placeholder="Retype Password"><br><br>
+		</div>
+
+		<div>
+			<!-- <pre> -->
+		<input type="submit" value="Register"> 
+        <!-- <a href="29_loginform.html">Login here</a>     -->
+        <input type="reset" value="Cancel">
+	<!-- </pre> -->
+		</div>
+		
+	</form>
+
+</body>
+
+</html>
